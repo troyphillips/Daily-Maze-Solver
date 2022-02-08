@@ -1,5 +1,28 @@
 # Daily-Maze
 
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#names">Names</a>
+      <ul>
+        <li>Scrum Master: Troy Phillips</li>
+      </ul>
+    </li>
+    <li>
+      <a href="#description">Desecription</a>
+    </li>
+    <li><a href="#visuals">Visuals</a></li>
+    <li><a href="#contribution">Contribution</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#acknowledgment">Acknowledgment</a></li>
+    <li><a href="#contacts">Contacts</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
+
 # Names
 1. Janae Gates<br>
 2. Yifan Kang<br>
@@ -19,7 +42,7 @@ This is a school project. We appreciate the contributions but, for this project,
 
 # Roadmap
 
-# Acknowledgement
+# Acknowledgment
 
 # Contacts
 Troy Phillips - dailymazeclemson@gmail.com<br>
