@@ -23,7 +23,7 @@
   </ol>
 </details>
 
-# Names
+## Names
 1. Janae Gates<br>
 2. Yifan Kang<br>
 3. Vandini Modi<br>
@@ -32,22 +32,22 @@
 <b>SCRUM Master</b>
 Troy Phillips
 
-# Description
+## Description
 Daily Maze is a mind game that will generate a unique maze for a user to solve everyday.
 
-# Visuals
+## Visuals
 
-# Contribution
-This is a school project. We appreciate the contributions but, for this project, not allowed to take help form the outside. Any suggestion is welcomed!
+## Contribution
+This is a school project. We appreciate all contributions but, we are not allowed to accept outside help for this project. Any suggestion are welcomed though!
 
-# Roadmap
+## Roadmap
 
-# Acknowledgment
+## Acknowledgment
 
-# Contacts
-Troy Phillips - dailymazeclemson@gmail.com<br>
+## Contacts
+Troy Phillips: dailymazeclemson@gmail.com<br>
 Project Link: https://github.com/troyphillips/Daily-Word-Maze
 
 
-# License
+## License
 Distributed under the MIT License. See LICENSE.txt for more information.
