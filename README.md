@@ -1,5 +1,6 @@
 # Daily-Maze
 
+<div id="top"></div>
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -32,22 +33,41 @@
 <b>SCRUM Master</b>
 Troy Phillips
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Description
 Daily Maze is a mind game that will generate a unique maze for a user to solve everyday.
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
 ## Visuals
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Contribution
 This is a school project. We appreciate all contributions but, we are not allowed to accept outside help for this project. Any suggestion are welcomed though!
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
 ## Roadmap
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Acknowledgment
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 
 ## Contacts
 Troy Phillips: dailymazeclemson@gmail.com<br>
 Project Link: https://github.com/troyphillips/Daily-Word-Maze
 
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## License
 Distributed under the MIT License. See LICENSE.txt for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
