@@ -13,7 +13,7 @@
       </ul>
     </li>
     <li>
-      <a href="#description">Desecription</a>
+      <a href="#description">Description</a>
     </li>
     <li><a href="#visuals">Visuals</a></li>
     <li><a href="#contribution">Contribution</a></li>
