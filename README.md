@@ -45,6 +45,9 @@ Daily Maze is a mind game that will generate a unique maze for a user to solve e
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+![Wireframe](https://github.com/troyphillips/Daily-Maze-Solver/blob/main/Daily%20Maze%20Wireframe.jpg?raw=true "Wireframe")
+
+
 ## Contribution
 This is a school project. We appreciate all contributions but, we are not allowed to accept outside help for this project. Any suggestion are welcomed though!
 
