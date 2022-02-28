@@ -1,8 +1,8 @@
 var app = new Vue({
     el: '#app',
     data: {
-        height: 4,
-        width: 4,
+        height: 3,
+        width: 3,
         mazeData: [{
             "x": 0,
             "y": 0,
