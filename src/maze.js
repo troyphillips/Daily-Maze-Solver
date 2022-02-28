@@ -1,7 +1,6 @@
 var app = new Vue({
     el: '#app',
     data: {
-        message: 'This is a simple Vue.js Declarative Rendering example!',
         height: 4,
         width: 4,
         mazeData: [{
@@ -171,6 +170,7 @@ var app = new Vue({
             self.height = data.height;
             self.weight = data.weight;
             self.mazeData = data.cells;
+            self.messsage = "data loaded";
         });
     }
 });  
