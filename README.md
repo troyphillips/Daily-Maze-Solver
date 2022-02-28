@@ -37,7 +37,7 @@ Troy Phillips
 
 ## Description
 Daily Maze is a mind game that will generate a unique maze for a user to solve everyday.
-<a href="https://troyphillips.github.io/Daily-Maze-Solver/maze.html">Play</a>
+<br>Click <a href="https://troyphillips.github.io/Daily-Maze-Solver/">here</a> to play.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
