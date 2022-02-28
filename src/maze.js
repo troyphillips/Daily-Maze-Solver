@@ -165,12 +165,12 @@ var app = new Vue({
             ]
         }]
     },
-    /*mounted() {
+    mounted() {
         var self = this
         $.getJSON('maze.json', function (data) {
             self.height = data.height;
             self.weight = data.weight;
             self.mazeData = data.cells;
         });
-    }*/
+    }
 });  
