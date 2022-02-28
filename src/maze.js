@@ -166,7 +166,7 @@ var app = new Vue({
     },
     mounted() {
         var self = this
-        $.getJSON('maze.json', function (data) {
+        $.getJSON('src/maze.json', function (data) {
             self.height = data.height;
             self.weight = data.weight;
             self.mazeData = data.cells;
