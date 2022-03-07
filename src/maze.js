@@ -1,8 +1,12 @@
+var intervalTimer;
 var app = new Vue({
     el: '#app',
     data: {
-        height: 3,
-        width: 3,
+        height: 4,
+        width: 4,
+        time: 60,
+        timeLeft: '00:00',
+        endTime: 0,
         mazeData: [{
             "x": 0,
             "y": 0,
@@ -164,7 +168,45 @@ var app = new Vue({
             ]
         }]
     },
-    mounted() {
+    methods: {
+        setTime(seconds) {
+          clearInterval(intervalTimer);
+          this.timer(seconds);
+        },
+        timer(seconds) {
+          const now = Date.now();
+          const end = now + seconds * 1000;
+          this.displayTimeLeft(seconds);
+    
+          this.endTime = seconds;
+          // this.initialTime = seconds;
+          //this.displayEndTime(end);
+          this.countdown(end);
+        },
+        countdown(end) {
+          // this.initialTime = this.endTime;
+          intervalTimer = setInterval(() => {
+            const secondsLeft = Math.round((end - Date.now()) / 1000);
+    
+            if(secondsLeft === 0) {
+              this.endTime = 0;
+            }
+    
+            if(secondsLeft < 0) {
+              clearInterval(intervalTimer);
+              return;
+            }
+            this.displayTimeLeft(secondsLeft)
+          }, 1000);
+        },
+        displayTimeLeft(secondsLeft) {
+          const minutes = Math.floor(secondsLeft / 60);
+          const seconds = secondsLeft % 60;
+    
+          this.timeLeft = `${minutes}:${seconds}`;
+        }
+    },
+    created() {
         var self = this
         $.getJSON('src/maze.json', function (data) {
             self.height = data.height;
