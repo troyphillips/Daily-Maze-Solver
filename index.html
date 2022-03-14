@@ -1,46 +1,61 @@
 <html>
 
 <head>
+  <style>
+    body{
+      text-align: center
+    }
+  </style>
+  
   <meta http-equiv='cache-control' content='no-cache'>
   <meta http-equiv='expires' content='0'>
   <meta http-equiv='pragma' content='no-cache'>
   <title>Daily Maze</title>
+  <link rel="stylesheet" href="index.css">
   <script src="src/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="src/vue.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 </head>
 
 <body>
-  <div id="menu">
-        <div class="custom-select">
-          <select id="diffSelect">
-            <!-- values are set to create size of maze. can be reworked later. -->
-               <option value="10">Easy</option>
-               <option value="15">Medium</option>
-               <option value="25">Hard</option>
-               <option value="38">Extreme</option>                                      
-           </select>
+  <div id="page" >
+      
+      
+      <div id="app">
+        <table  border="0" cellpadding="0" cellspacing="0" style="padding:0px; margin:0px;text-align: center">
+          <tbody >
+            <tr  v-for="row in height">
+              <td v-for="col in width" style="border-style: solid;width: 70px;height: 70px;"
+                v-bind:style="{borderWidth: mazeData[(row-1)*width+col-1].borders[0]+'px '+mazeData[(row-1)*width+col-1].borders[1]+'px '+mazeData[(row-1)*width+col-1].borders[2]+'px '+mazeData[(row-1)*width+col-1].borders[3]+'px'}">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Add space between maze and buttons--><br>
+
+        <div class="custom-select" id="menu">
+          <div class="custom-select">
+            <select id="diffSelect">
+              <!-- values are set to create size of maze. can be reworked later. -->
+                <option value="10">Easy</option>
+                <option value="15">Medium</option>
+                <option value="25">Hard</option>
+                <option value="38">Extreme</option>                                      
+            </select>
+          </div>
+          <br>
+          <!-- Build start button and start game timer-->
+          <div id="timer">
+            <br>
+            <input class="custom-select" id="start" v-on:click.prevent="setTime(time)" value="Start"/>            
+            <br><h2>{{ timeLeft }}
+          </div>
+          <script src="src/maze.js"></script> 
+          
+
         </div>
-    <
-  </div>
-  
-  <div id="app">
-    <table border="0" cellpadding="0" cellspacing="0" style="padding:0px; margin:0px">
-      <tbody>
-        <tr v-for="row in height">
-          <td v-for="col in width" style="border-style: solid; width: 70px;height: 70px;"
-            v-bind:style="{borderWidth: mazeData[(row-1)*width+col-1].borders[0]+'px '+mazeData[(row-1)*width+col-1].borders[1]+'px '+mazeData[(row-1)*width+col-1].borders[2]+'px '+mazeData[(row-1)*width+col-1].borders[3]+'px'}">
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <div id="timer">
-      <h2>{{ timeLeft }}
-      <a v-on:click.prevent="setTime(time)">
-        Start
-      </a></h2>
-    </div>
-    <script src="src/maze.js"></script>
+        
+      </div>
 </body>
 
 </html>
