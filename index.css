@@ -1,0 +1,87 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+input,
+select {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.30);
+    height: 45px;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    appearance: none;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.70);
+    }
+    &:active {
+        background-color: black;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+#app{
+    text-align: center
+}
+
+
+#page {
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-align: center;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    margin: auto;
+    #menu {
+        display: inline-block;
+        margin: auto;
+        padding: 10px;
+        height: 65px;
+        box-sizing: border-box;
+        h1 {
+            margin: 0;
+            margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 3.2rem;
+        }
+    }
+    #view {
+        position: absolute;
+        top:65px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+           
+    }
+}
+
+.border {
+    border: 1px black solid;
+    border-radius: 5px;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .custom-select {
+    display: inline-block;
+  }
