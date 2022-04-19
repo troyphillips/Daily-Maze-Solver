@@ -4,12 +4,16 @@ var app = new Vue({
     data: {
         height: 4,
         width: 4,
+        bcolor: "white",
+        x_c: 0,
+        y_c: 0,
         time: 60,
         timeLeft: '00:00',
         endTime: 0,
         mazeData: [{
             "x": 0,
             "y": 0,
+            "content": "\u2605",
             "borders": [
                 1,
                 0,
@@ -179,12 +183,9 @@ var app = new Vue({
           this.displayTimeLeft(seconds);
     
           this.endTime = seconds;
-          // this.initialTime = seconds;
-          //this.displayEndTime(end);
           this.countdown(end);
         },
         countdown(end) {
-          // this.initialTime = this.endTime;
           intervalTimer = setInterval(() => {
             const secondsLeft = Math.round((end - Date.now()) / 1000);
     
@@ -204,6 +205,37 @@ var app = new Vue({
           const seconds = secondsLeft % 60;
     
           this.timeLeft = `${minutes}:${seconds}`;
+        },
+        moveRight: function () {
+            if (this.mazeData[this.mazeIndex].borders[1] == 0) {
+                this.mazeData[this.mazeIndex].content = "\u2606";
+                this.$set(this, "y_c", this.y_c + 1);
+                this.mazeData[this.mazeIndex].content = "\u2605";
+            }
+        },
+        moveLeft: function () {
+            if (this.mazeData[this.mazeIndex].borders[3] == 0) {
+                this.mazeData[this.mazeIndex].content = "\u2606";
+                this.$set(this, "y_c", this.y_c - 1);
+                this.mazeData[this.mazeIndex].content = "\u2605";
+            }
+        },
+        moveDown: function () {
+            if (this.mazeData[this.mazeIndex].borders[2] == 0) {
+                this.mazeData[this.mazeIndex].content = "\u2606";
+                this.$set(this, "x_c", this.x_c + 1);
+                this.mazeData[this.mazeIndex].content = "\u2605";
+            }
+        },
+        moveUp: function () {
+            if (this.mazeData[this.mazeIndex].borders[0] == 0) {
+                this.mazeData[this.mazeIndex].content = "\u2606";
+                this.$set(this, "x_c", this.x_c - 1);
+                this.mazeData[this.mazeIndex].content = "\u2605";
+            }
+        },
+        startMaze: function () {
+                this.$set(this, "bcolor", "black");
         }
     },
     created() {
