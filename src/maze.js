@@ -181,6 +181,7 @@ var app = new Vue({
     },
     methods: {
         setTime(seconds) {
+          this.startMaze();
           clearInterval(intervalTimer);
           this.timer(seconds);
         },
