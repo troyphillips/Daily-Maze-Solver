@@ -1,6 +1,10 @@
 {
     "weight": 4,
     "height": 4,
+    "end_x": 3,
+    "end_y": 2,
+    "start_x": 0,
+    "start_y": 0,
     "cells": [
         {
             "x": 0,
