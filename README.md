@@ -36,7 +36,7 @@ Troy Phillips
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Description
-Daily Maze is a mind game that will generate a unique maze for a user to solve everyday.
+Daily Maze is a game that will generate a unique maze for a user to solve daily. Users will only have one try to solve the maze per day and must complete the maze before time expires. 
 <br>Click <a href="https://troyphillips.github.io/Daily-Maze-Solver/">here</a> to play.
 
 
@@ -57,14 +57,17 @@ This is a school project. We appreciate all contributions but, we are not allowe
 
 
 ## Roadmap
+1. Create maze algorithms to make sure generated mazes are solvable. -- DONE
+2. Create webpage to host our maze -- DONE
+3. Set up GitHub actions to automatically run our Python code at midnight and populate json files with new maze map. -- DONE
+4. Allow users to select maze difficulty 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Acknowledgment
-
+We used PyGame and PYamaze Library to create our unique mazes.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 ## Contacts
 Troy Phillips: dailymazeclemson@gmail.com<br>
