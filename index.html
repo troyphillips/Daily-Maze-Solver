@@ -26,12 +26,21 @@
           <tbody >
             <tr  v-for="row in height">
               <td v-for="col in width" style="border-style: solid;width: 70px;height: 70px;"
-                v-bind:style="{borderWidth: mazeData[(row-1)*width+col-1].borders[0]+'px '+mazeData[(row-1)*width+col-1].borders[1]+'px '+mazeData[(row-1)*width+col-1].borders[2]+'px '+mazeData[(row-1)*width+col-1].borders[3]+'px'}">
+                v-bind:style="{borderColor: bcolor, borderWidth: mazeData[(row-1)*width+col-1].borders[0]+'px '+mazeData[(row-1)*width+col-1].borders[1]+'px '+mazeData[(row-1)*width+col-1].borders[2]+'px '+mazeData[(row-1)*width+col-1].borders[3]+'px'}">
+              {{mazeData[(row-1)*width+col-1].content}}
               </td>
             </tr>
           </tbody>
         </table>
         <!-- Add space between maze and buttons--><br>
+        
+        
+      <button @click="moveLeft">Left</button>
+      <button @click="moveUp">Up</button>
+      <button @click="moveDown">Down</button>
+      <button @click="moveRight">Right</button><br>
+      <button @click="startMaze">Start</button>
+        <br>
 
         <div class="custom-select" id="menu">
           <div class="custom-select">
