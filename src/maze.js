@@ -215,7 +215,7 @@ var app = new Vue({
                 this.mazeData[this.mazeIndex].content = "\u2606";
                 this.$set(this, "y_c", this.y_c + 1);
                 this.mazeData[this.mazeIndex].content = "\u2605";
-                if(this.x_c==this.end_x && this.y_c==this.end_y)
+                if(this.x_c==this.x_end && this.y_c==this.y_end)
                     alert("congratulations!");
             }
         },
@@ -224,7 +224,7 @@ var app = new Vue({
                 this.mazeData[this.mazeIndex].content = "\u2606";
                 this.$set(this, "y_c", this.y_c - 1);
                 this.mazeData[this.mazeIndex].content = "\u2605";
-                if(this.x_c==this.end_x && this.y_c==this.end_y)
+                if(this.x_c==this.x_end && this.y_c==this.y_end)
                     alert("congratulations!");
             }
         },
@@ -233,7 +233,7 @@ var app = new Vue({
                 this.mazeData[this.mazeIndex].content = "\u2606";
                 this.$set(this, "x_c", this.x_c + 1);
                 this.mazeData[this.mazeIndex].content = "\u2605";
-                if(this.x_c==this.end_x && this.y_c==this.end_y)
+                if(this.x_c==this.x_end && this.y_c==this.y_end)
                     alert("congratulations!");
             }
         },
@@ -242,7 +242,7 @@ var app = new Vue({
                 this.mazeData[this.mazeIndex].content = "\u2606";
                 this.$set(this, "x_c", this.x_c - 1);
                 this.mazeData[this.mazeIndex].content = "\u2605";
-                if(this.x_c==this.end_x && this.y_c==this.end_y)
+                if(this.x_c==this.x_end && this.y_c==this.y_end)
                     alert("congratulations!");
             }
         },
