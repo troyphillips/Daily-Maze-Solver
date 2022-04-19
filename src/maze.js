@@ -181,14 +181,12 @@ var app = new Vue({
           const now = Date.now();
           const end = now + seconds * 1000;
           this.displayTimeLeft(seconds);
-    
           this.endTime = seconds;
           this.countdown(end);
         },
         countdown(end) {
           intervalTimer = setInterval(() => {
             const secondsLeft = Math.round((end - Date.now()) / 1000);
-    
             if(secondsLeft === 0) {
               this.endTime = 0;
             }
@@ -203,7 +201,6 @@ var app = new Vue({
         displayTimeLeft(secondsLeft) {
           const minutes = Math.floor(secondsLeft / 60);
           const seconds = secondsLeft % 60;
-    
           this.timeLeft = `${minutes}:${seconds}`;
         },
         moveRight: function () {
