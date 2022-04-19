@@ -248,7 +248,20 @@ var app = new Vue({
             }
         },
         startMaze: function () {
-                this.$set(this, "bcolor", "black");
+            this.$set(this, "bcolor", "black");
+        },
+        switchDifficulty: function (filename) {
+            var self = this
+            $.getJSON(filename, function (data) {
+                self.height = data.height;
+                self.weight = data.weight;
+                self.mazeData = data.cells;
+                self.x_c = data.start_x;
+                self.y_c = data.start_y;
+                self.x_end = data.end_x;
+                self.y_end = data.end_y;
+                self.messsage = "data loaded";
+        });
         }
     },
     created() {
