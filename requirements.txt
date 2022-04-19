@@ -1,1 +1,4 @@
 pygame
+tkinter
+enum
+collections
