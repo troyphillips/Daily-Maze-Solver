@@ -172,6 +172,11 @@ var app = new Vue({
             ]
         }]
     },
+    computed: {
+        mazeIndex() {
+            return this.x_c * this.width + this.y_c
+        }
+    },
     methods: {
         setTime(seconds) {
           clearInterval(intervalTimer);
