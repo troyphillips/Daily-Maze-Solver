@@ -7,6 +7,8 @@ var app = new Vue({
         bcolor: "white",
         x_c: 0,
         y_c: 0,
+        x_end: 3,
+        y_end: 3,
         time: 60,
         timeLeft: '00:00',
         endTime: 0,
@@ -213,6 +215,8 @@ var app = new Vue({
                 this.mazeData[this.mazeIndex].content = "\u2606";
                 this.$set(this, "y_c", this.y_c + 1);
                 this.mazeData[this.mazeIndex].content = "\u2605";
+                if(this.x_c==this.end_x && this.y_c==this.end_y)
+                    alert("congratulations!");
             }
         },
         moveLeft: function () {
@@ -220,6 +224,8 @@ var app = new Vue({
                 this.mazeData[this.mazeIndex].content = "\u2606";
                 this.$set(this, "y_c", this.y_c - 1);
                 this.mazeData[this.mazeIndex].content = "\u2605";
+                if(this.x_c==this.end_x && this.y_c==this.end_y)
+                    alert("congratulations!");
             }
         },
         moveDown: function () {
@@ -227,6 +233,8 @@ var app = new Vue({
                 this.mazeData[this.mazeIndex].content = "\u2606";
                 this.$set(this, "x_c", this.x_c + 1);
                 this.mazeData[this.mazeIndex].content = "\u2605";
+                if(this.x_c==this.end_x && this.y_c==this.end_y)
+                    alert("congratulations!");
             }
         },
         moveUp: function () {
@@ -234,6 +242,8 @@ var app = new Vue({
                 this.mazeData[this.mazeIndex].content = "\u2606";
                 this.$set(this, "x_c", this.x_c - 1);
                 this.mazeData[this.mazeIndex].content = "\u2605";
+                if(this.x_c==this.end_x && this.y_c==this.end_y)
+                    alert("congratulations!");
             }
         },
         startMaze: function () {
@@ -246,6 +256,10 @@ var app = new Vue({
             self.height = data.height;
             self.weight = data.weight;
             self.mazeData = data.cells;
+            self.x_c = data.start_x;
+            self.y_c = data.start_y;
+            self.x_end = data.end_x;
+            self.y_end = data.end_y;
             self.messsage = "data loaded";
         });
     }
