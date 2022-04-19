@@ -25,7 +25,7 @@
         <table  border="0" cellpadding="0" cellspacing="0" style="padding:0px; margin:0px;text-align: center">
           <tbody >
             <tr  v-for="row in height">
-              <td v-for="col in width" style="border-style: solid;width: 70px;height: 70px;"
+              <td v-for="col in width" style="border-style: solid;width: 30px;height: 30px;"
                 v-bind:style="{borderColor: bcolor, borderWidth: mazeData[(row-1)*width+col-1].borders[0]+'px '+mazeData[(row-1)*width+col-1].borders[1]+'px '+mazeData[(row-1)*width+col-1].borders[2]+'px '+mazeData[(row-1)*width+col-1].borders[3]+'px'}">
               {{mazeData[(row-1)*width+col-1].content}}
               </td>
@@ -58,11 +58,8 @@
             <input class="custom-select noselect" id="start" v-on:click.prevent="setTime(time)" value="Start"/>            
             <br><h2>{{ timeLeft }}
           </div>
-          <script src="src/maze.js"></script> 
-          
-
         </div>
-        
+      <script src="src/maze.js"></script> 
       </div>
 </body>
 
