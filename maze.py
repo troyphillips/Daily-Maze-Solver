@@ -1,4 +1,3 @@
-import pygame
 import json
 import random,datetime,csv,os
 from tkinter import *
@@ -890,26 +889,35 @@ def maze_to_json(maze):
             tmp["content"]="\u2665"
         if tmp["x"]==data["start_x"] and tmp["y"]==data["start_y"]:
             tmp["content"]="\u2605"
-        tmp["borders"]=[maze.maze_map[c]['N'],maze.maze_map[c]['E'],maze.maze_map[c]['S'],maze.maze_map[c]['W']]
+        tmp["borders"]=[1-maze.maze_map[c]['N'],1-maze.maze_map[c]['E'],1-maze.maze_map[c]['S'],1-maze.maze_map[c]['W']]
         cells.append(tmp)
+    cells = sorted(cells, key=lambda d: d['x']) 
     data["cells"]=cells
     return data
 
 m = maze(10,10)
 m.CreateMaze(loopPercent= 30)
+#print(m.maze_map)
 
 with open("src/maze_easy.json","w") as f:
     f.write(json.dumps(maze_to_json(m)))
+#m.run()
 
-m = maze(10,15)
-m.CreateMaze(loopPercent= 30)
+m = maze(15,15)
+m.CreateMaze(loopPercent= 25)
 
 with open("src/maze_medium.json","w") as f:
     f.write(json.dumps(maze_to_json(m)))
 
 m = maze(20,20)
-m.CreateMaze(loopPercent= 30)
+m.CreateMaze(loopPercent= 22)
 
 with open("src/maze_hard.json","w") as f:
+    f.write(json.dumps(maze_to_json(m)))
+
+m = maze(30,30)
+m.CreateMaze(loopPercent= 20)
+
+with open("src/maze_ex.json","w") as f:
     f.write(json.dumps(maze_to_json(m)))
 
