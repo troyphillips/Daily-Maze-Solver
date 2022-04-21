@@ -60,7 +60,8 @@ This is a school project. We appreciate all contributions but, we are not allowe
 1. Create maze algorithms to make sure generated mazes are solvable. -- DONE
 2. Create webpage to host our maze -- DONE
 3. Set up GitHub actions to automatically run our Python code at midnight and populate json files with new maze map. -- DONE
-4. Allow users to select maze difficulty 
+4. Allow users to select maze difficulty -- DONE
+5. Limit users to one try per day -- IN PROGRESS
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
