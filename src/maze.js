@@ -203,6 +203,10 @@ var app = new Vue({
               clearInterval(intervalTimer);
               return;
             }
+            if(secondsLeft = 0) {
+                alert("Game Over!");
+                clearInterval(intervalTimer);
+            }
             this.displayTimeLeft(secondsLeft)
           }, 1000);
         },
@@ -218,6 +222,7 @@ var app = new Vue({
                 this.mazeData[this.mazeIndex].content = "\u2605";
                 if(this.x_c==this.x_end && this.y_c==this.y_end)
                     alert("congratulations!");
+                    this.secondsLeft=0;
             }
         },
         moveLeft: function () {
