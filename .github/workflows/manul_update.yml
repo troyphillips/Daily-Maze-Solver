@@ -1,4 +1,4 @@
-name: update-maze
+name: update-maze-mannually
 
 on: workflow_dispatch
 
