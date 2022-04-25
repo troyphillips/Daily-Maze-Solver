@@ -3,6 +3,7 @@ select {
     cursor: pointer;
     height: 45px;
     width: 150px;
+    background-color: rgba(0, 0, 0, 0.70);
     padding: 10px;
     border: none;
     border-radius: 5px;
