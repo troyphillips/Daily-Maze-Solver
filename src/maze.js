@@ -12,7 +12,8 @@ var app = new Vue({
         time: 60,
         timeLeft: '00:00',
         endTime: 0,
-        disable: false,
+        started: false,
+        solved: false,
         mazeData: [{
             "x": 0,
             "y": 0,
@@ -224,9 +225,9 @@ var app = new Vue({
                 this.$set(this, "y_c", this.y_c + 1);
                 this.mazeData[this.mazeIndex].content = "\u2605";
                 if(this.x_c==this.x_end && this.y_c==this.y_end){
-                    alert("congratulations!");
+                    alert("Congratulations!");
                     clearInterval(intervalTimer);
-                    this.$set(this, "disable", false);
+                    this.$set(this, "solved", true);
                 }
             }
         },
@@ -236,9 +237,9 @@ var app = new Vue({
                 this.$set(this, "y_c", this.y_c - 1);
                 this.mazeData[this.mazeIndex].content = "\u2605";
                 if(this.x_c==this.x_end && this.y_c==this.y_end){
-                    alert("congratulations!");
+                    alert("Congratulations!");
                     clearInterval(intervalTimer);
-                    this.$set(this, "disable", false);
+                    this.$set(this, "solved", true);
                 }
             }
         },
@@ -248,9 +249,9 @@ var app = new Vue({
                 this.$set(this, "x_c", this.x_c + 1);
                 this.mazeData[this.mazeIndex].content = "\u2605";
                 if(this.x_c==this.x_end && this.y_c==this.y_end){
-                    alert("congratulations!");
+                    alert("Congratulations!");
                     clearInterval(intervalTimer);
-                    this.$set(this, "disable", false);
+                    this.$set(this, "solved", true);
                 }
             }
         },
@@ -260,19 +261,20 @@ var app = new Vue({
                 this.$set(this, "x_c", this.x_c - 1);
                 this.mazeData[this.mazeIndex].content = "\u2605";
                 if(this.x_c==this.x_end && this.y_c==this.y_end){
-                    alert("congratulations!");
+                    alert("Congratulations!");
                     clearInterval(intervalTimer);
-                    this.$set(this, "disable", false);
+                    this.$set(this, "solved", true);
                 }
             }
         },
         startMaze: function () {
             this.$set(this, "bcolor", "black");
-            this.$set(this, "disable", true);
+            this.$set(this, "started", true);
         },
         switchDifficulty: function (filename) {
             var self = this;
             this.$set(this, "bcolor", "white");
+            this.$set(this, "solved", false);
             if(filename == "src/maze_easy.json")
                 this.time=60;
             if(filename == "src/maze_medium.json")
