@@ -69,6 +69,10 @@ select {
     margin-left: auto;
     margin-right: auto;
   }
+.control{
+    height:36px;
+    width:36px;
+}
 
   .custom-select {
     display: inline-block;
