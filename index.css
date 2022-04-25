@@ -74,7 +74,8 @@ input:focus {
     appearance: none;
     margin-top: 4px;
 }
-.control:hover{
+.control:hover,
+.control:disabled{
     background-color: rgba(0, 0, 0, 0.50);
 }
 
