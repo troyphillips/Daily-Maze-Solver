@@ -265,9 +265,9 @@ var app = new Vue({
                 this.time=60;
             if(filename == "src/maze_medium.json")
                 this.time=90;
-            if(filename == "src/maze_easy.json")
+            if(filename == "src/maze_hard.json")
                 this.time=120;
-            if(filename == "src/maze_easy.json")
+            if(filename == "src/maze_ex.json")
                 this.time=180;
             $.getJSON(filename, function (data) {
                 self.height = data.height;
