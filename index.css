@@ -36,6 +36,7 @@ select {
     height: auto;
     width: auto;
     margin: auto;
+    background-color: #ffffff;
     #menu {
         display: inline-block;
         margin: auto;
