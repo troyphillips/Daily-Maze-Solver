@@ -48,7 +48,7 @@ Maze update: [![update-maze](https://github.com/troyphillips/Daily-Maze-Solver/a
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-![Wireframe](https://github.com/troyphillips/Daily-Maze-Solver/blob/main/Daily%20Maze%20Wireframe.jpg?raw=true "Wireframe")
+![Wireframe](https://github.com/troyphillips/Daily-Maze-Solver/blob/main/Daily%20Maze%20Wireframe.jpg?raw=true "Wireframe"){width=50%}
 
 
 ## Contribution
