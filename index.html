@@ -42,7 +42,7 @@
         <br>
 
         <div class="custom-select" id="menu">
-          <div class="custom-select" {{disable}}>
+          <div class="custom-select" :disabled="disable">
             <select id="diffSelect" @change="switchDifficulty($event.target.value)">
               <!-- values are set to create size of maze. can be reworked later. -->
                 <option value="src/maze_easy.json">Easy</option>
@@ -55,7 +55,7 @@
           <!-- Build start button and start game timer-->
           <div id="timer">
             <br>
-            <input class="custom-select noselect" id="start" v-on:click.prevent="setTime(time)" value="Start"/ {{disable}}>            
+            <input class="custom-select noselect" id="start" v-on:click.prevent="setTime(time)" value="Start" :disabled="disable"/>            
             <br><h2>{{ timeLeft }}
           </div>
         </div>
