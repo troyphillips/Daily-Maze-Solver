@@ -1,7 +1,6 @@
 input,
 select {
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.70);
     height: 45px;
     width: 150px;
     padding: 10px;
