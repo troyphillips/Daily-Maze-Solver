@@ -13,15 +13,25 @@ select {
     text-align: center;
     text-decoration: none;
     appearance: none;
+    background-size: 300% 100%;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
 }
 
-input:hover,
-select:hover,
-input:focus,
-select:focus,
-.control:hover,
-.control:focus,{
-  background-color: black;
+input:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+input:focus {
+    outline: none;
 }
 
 #app{
@@ -37,29 +47,6 @@ select:focus,
     width: auto;
     margin: auto;
     background-color: #ffffff;
-    #menu {
-        display: inline-block;
-        margin: auto;
-        padding: 10px;
-        height: 65px;
-        box-sizing: border-box;
-        h1 {
-            margin: 0;
-            margin-bottom: 10px;
-            font-weight: 600;
-            font-size: 3.2rem;
-        }
-    }
-    #view {
-        position: absolute;
-        top:65px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: auto;
-           
-    }
 }
 
 .border {
@@ -70,6 +57,7 @@ select:focus,
     margin-left: auto;
     margin-right: auto;
   }
+
 .control{
     height: 45px;
     width: 45px;
@@ -84,18 +72,13 @@ select:focus,
     text-align: center;
     text-decoration: none;
     appearance: none;
+    margin-top: 4px;
+}
+.control:hover{
+    background-color: rgba(0, 0, 0, 0.50);
 }
 
-  .custom-select {
+.custom-select {
     display: inline-block;
   }
 
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-}
