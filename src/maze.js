@@ -261,6 +261,14 @@ var app = new Vue({
         },
         switchDifficulty: function (filename) {
             var self = this
+            if(filename == "src/maze_easy.json")
+                this.time=60;
+            if(filename == "src/maze_medium.json")
+                this.time=90;
+            if(filename == "src/maze_easy.json")
+                this.time=120;
+            if(filename == "src/maze_easy.json")
+                this.time=180;
             $.getJSON(filename, function (data) {
                 self.height = data.height;
                 self.width = data.weight;
