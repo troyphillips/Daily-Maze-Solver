@@ -200,12 +200,9 @@ var app = new Vue({
             }
     
             if(secondsLeft < 0) {
+              alert("Time's up:(");
               clearInterval(intervalTimer);
               return;
-            }
-            if(secondsLeft = 0) {
-                alert("Game Over!");
-                clearInterval(intervalTimer);
             }
             this.displayTimeLeft(secondsLeft)
           }, 1000);
