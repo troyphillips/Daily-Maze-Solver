@@ -37,9 +37,9 @@ Troy Phillips
 
 ## Description
 Daily Maze is a game that will generate a unique maze for a user to solve daily. Users will only have one try to solve the maze per day and must complete the maze before time expires. 
-<br>Click <a href="https://troyphillips.github.io/Daily-Maze-Solver/">HERE</a> to play.<br>
-Current page status: [![pages-build-deployment](https://github.com/troyphillips/Daily-Maze-Solver/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/troyphillips/Daily-Maze-Solver/actions/workflows/pages/pages-build-deployment)
-
+<br>Click <a href="https://troyphillips.github.io/Daily-Maze-Solver/">HERE</a> to play.<br><br>
+Current page status: [![pages-build-deployment](https://github.com/troyphillips/Daily-Maze-Solver/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/troyphillips/Daily-Maze-Solver/actions/workflows/pages/pages-build-deployment)<br>
+Maze update: [![update-maze](https://github.com/troyphillips/Daily-Maze-Solver/actions/workflows/updateMaze.yml/badge.svg)](https://github.com/troyphillips/Daily-Maze-Solver/actions/workflows/updateMaze.yml)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
