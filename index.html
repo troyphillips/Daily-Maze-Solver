@@ -42,8 +42,8 @@
         <br>
 
         <div class="custom-select" id="menu">
-          <div class="custom-select" :disabled="disable">
-            <select id="diffSelect" @change="switchDifficulty($event.target.value)">
+          <div class="custom-select">
+            <select id="diffSelect" @change="switchDifficulty($event.target.value)" :disabled="disable">
               <!-- values are set to create size of maze. can be reworked later. -->
                 <option value="src/maze_easy.json">Easy</option>
                 <option value="src/maze_medium.json">Medium</option>
