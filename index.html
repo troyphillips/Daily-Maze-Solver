@@ -14,7 +14,7 @@
   <title>Daily Maze</title>
   <link rel="stylesheet" href="index.css">
   <script src="src/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="src/vue.js"></script>
+  <script type="text/javascript" src="src/vue.min.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 </head>
 
@@ -36,10 +36,10 @@
         <!-- Add space between maze and buttons--><br>
         
       
-      <button @click="moveUp">↑</button><br>  
-      <button @click="moveLeft">←</button>
-      <button @click="moveDown">↓</button>
-      <button @click="moveRight">→</button><br>
+      <button @click="moveUp" class="control">↑</button><br>  
+      <button @click="moveLeft" class="control>←</button>
+      <button @click="moveDown" class="control>↓</button>
+      <button @click="moveRight" class="control>→</button><br>
         <br>
 
         <div class="custom-select" id="menu">
