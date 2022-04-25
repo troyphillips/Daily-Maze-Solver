@@ -12,6 +12,7 @@ var app = new Vue({
         time: 60,
         timeLeft: '00:00',
         endTime: 0,
+        disable: "",
         mazeData: [{
             "x": 0,
             "y": 0,
@@ -220,6 +221,7 @@ var app = new Vue({
                 if(this.x_c==this.x_end && this.y_c==this.y_end){
                     alert("congratulations!");
                     clearInterval(intervalTimer);
+                    this.$set(this, "disable",  "");
                 }
             }
         },
@@ -231,6 +233,7 @@ var app = new Vue({
                 if(this.x_c==this.x_end && this.y_c==this.y_end){
                     alert("congratulations!");
                     clearInterval(intervalTimer);
+                    this.$set(this, "disable",  "");
                 }
             }
         },
@@ -242,6 +245,7 @@ var app = new Vue({
                 if(this.x_c==this.x_end && this.y_c==this.y_end){
                     alert("congratulations!");
                     clearInterval(intervalTimer);
+                    this.$set(this, "disable",  "");
                 }
             }
         },
@@ -253,11 +257,13 @@ var app = new Vue({
                 if(this.x_c==this.x_end && this.y_c==this.y_end){
                     alert("congratulations!");
                     clearInterval(intervalTimer);
+                    this.$set(this, "disable",  "");
                 }
             }
         },
         startMaze: function () {
             this.$set(this, "bcolor", "black");
+            this.$set(this, "disable",  "disabled");
         },
         switchDifficulty: function (filename) {
             var self = this
