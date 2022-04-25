@@ -13,15 +13,15 @@ select {
     text-align: center;
     text-decoration: none;
     appearance: none;
-    &:hover {
-        background-color: rgba(0, 0, 0, 0.70);
-    }
-    &:active {
-        background-color: black;
-    }
-    &:focus {
-        outline: none;
-    }
+}
+
+input:hover,
+select:hover,
+input:focus,
+select:focus,
+.control:hover,
+.control:focus,{
+  background-color: black;
 }
 
 #app{
