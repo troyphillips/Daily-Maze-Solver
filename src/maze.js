@@ -267,7 +267,8 @@ var app = new Vue({
             this.$set(this, "disable", true);
         },
         switchDifficulty: function (filename) {
-            var self = this
+            var self = this;
+            this.$set(this, "bcolor", "white");
             if(filename == "src/maze_easy.json")
                 this.time=60;
             if(filename == "src/maze_medium.json")
