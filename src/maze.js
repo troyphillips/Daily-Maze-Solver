@@ -210,9 +210,13 @@ var app = new Vue({
           }, 1000);
         },
         displayTimeLeft(secondsLeft) {
-          const minutes = Math.floor(secondsLeft / 60);
-          const seconds = secondsLeft % 60;
-          this.timeLeft = `${minutes}:${seconds}`;
+            var minutes = Math.floor(secondsLeft / 60);
+            var seconds = secondsLeft % 60;
+            if (minutes < 10)
+                minutes = `0${minutes}`;
+            if (seconds < 10)
+                seconds = `0${seconds}`;
+            this.timeLeft = `${minutes}:${seconds}`;
         },
         moveRight: function () {
             if (this.mazeData[this.mazeIndex].borders[1] == 0) {
