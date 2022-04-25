@@ -204,7 +204,7 @@ var app = new Vue({
             if(secondsLeft < 0) {
               alert("Time's up:(");
               clearInterval(intervalTimer);
-              this.disable =  false;
+              this.started =  false;
               return;
             }
             this.displayTimeLeft(secondsLeft)
