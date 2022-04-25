@@ -275,6 +275,7 @@ var app = new Vue({
             var self = this;
             this.$set(this, "bcolor", "white");
             this.$set(this, "solved", false);
+            this.$set(this, "started", false);
             if(filename == "src/maze_easy.json")
                 this.time=60;
             if(filename == "src/maze_medium.json")
