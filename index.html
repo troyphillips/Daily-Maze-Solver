@@ -36,10 +36,10 @@
         <!-- Add space between maze and buttons--><br>
         
       
-      <button @click="moveUp" class="control">↑</button><br>  
-      <button @click="moveLeft" class="control">←</button>
-      <button @click="moveDown" class="control">↓</button>
-      <button @click="moveRight" class="control">→</button><br>
+      <button @click="moveUp" class="control" :disabled="!disable">↑</button><br>  
+      <button @click="moveLeft" class="control" :disabled="!disable">←</button>
+      <button @click="moveDown" class="control" :disabled="!disable">↓</button>
+      <button @click="moveRight" class="control" :disabled="!disable">→</button><br>
         <br>
 
         <div class="custom-select" id="menu">
