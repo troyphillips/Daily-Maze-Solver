@@ -71,8 +71,19 @@ select {
     margin-right: auto;
   }
 .control{
-    height:36px;
-    width:36px;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.70);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    appearance: none;
 }
 
   .custom-select {
