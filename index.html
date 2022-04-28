@@ -36,10 +36,10 @@
       
         <!-- controls to walk the maze-->
       <div class="nonselect" id="controlpad">
-      <button @click="moveUp" class="control" :disabled="!started || solved">&#11165;</button><br>  
-      <button @click="moveLeft" class="control" :disabled="!started || solved">&#11164;</button>
-      <button @click="moveDown" class="control" :disabled="!started || solved">&#11167;</button>
-      <button @click="moveRight" class="control" :disabled="!started || solved">&#11166;</button>
+      <button @click="moveUp" class="control" :disabled="!started || solved">▲</button><br>  
+      <button @click="moveLeft" class="control" :disabled="!started || solved">◀</button>
+      <button @click="moveDown" class="control" :disabled="!started || solved">▼</button>
+      <button @click="moveRight" class="control" :disabled="!started || solved">▶</button>
         <br><br></div>
 
         <div class="custom-select" id="menu">
