@@ -40,7 +40,7 @@ input:focus {
 
 
 #page {
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: 'Noto Sans', sans-serif, "Segoe UI", Arial;
     text-align: center;
     display: inline-block;
     height: auto;
