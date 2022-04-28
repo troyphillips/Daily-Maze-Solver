@@ -73,6 +73,7 @@ input:focus {
     text-decoration: none;
     appearance: none;
     margin-top: 4px;
+    font-family: 'Noto Sans Symbols 2', sans-serif;
 }
 .control:hover,
 .control:disabled{
