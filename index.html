@@ -6,7 +6,6 @@
       text-align: center
     }
   </style>
-  
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daily Maze</title>
@@ -14,12 +13,13 @@
   <script src="src/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="src/vue.min.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div id="page" >
-      
-      
       <div id="app">
         <!-- use a table to display the maze -->
         <table  class="nonselect" border="0" cellpadding="0" cellspacing="0" style="padding:0px; margin:0px;text-align: center">
@@ -35,11 +35,11 @@
         <!-- Add space between maze and buttons--><br>
       
         <!-- controls to walk the maze-->
-      <div class="nonselect" id="controlpad">
-      <button @click="moveUp" class="control" :disabled="!started || solved">▲</button><br>  
-      <button @click="moveLeft" class="control" :disabled="!started || solved">◀</button>
-      <button @click="moveDown" class="control" :disabled="!started || solved">▼</button>
-      <button @click="moveRight" class="control" :disabled="!started || solved">▶</button>
+      <div class="nonselect" id="controlpad" style="font-family: 'Noto Sans Symbols 2', sans-serif;">
+      <button @click="moveUp" class="control" :disabled="!started || solved">⮝</button><br>  
+      <button @click="moveLeft" class="control" :disabled="!started || solved">⮜</button>
+      <button @click="moveDown" class="control" :disabled="!started || solved">⮟</button>
+      <button @click="moveRight" class="control" :disabled="!started || solved">⮞</button>
         <br><br></div>
 
         <div class="custom-select" id="menu">
