@@ -16,6 +16,9 @@
   <script src="src/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="src/vue.min.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +27,7 @@
       
       <div id="app">
         <!-- use a table to display the maze -->
-        <table  border="0" cellpadding="0" cellspacing="0" style="padding:0px; margin:0px;text-align: center">
+        <table  class="nonselect" border="0" cellpadding="0" cellspacing="0" style="padding:0px; margin:0px;text-align: center">
           <tbody >
             <tr  v-for="row in height">
               <td v-for="col in width" style="border-style: solid;width: 30px;height: 30px;"
