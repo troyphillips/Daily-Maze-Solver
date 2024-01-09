@@ -205,6 +205,7 @@ var app = new Vue({
               alert("Time's up:(");
               clearInterval(intervalTimer);
               this.started =  false;
+              this.solved = false;
               return;
             }
             this.displayTimeLeft(secondsLeft)
