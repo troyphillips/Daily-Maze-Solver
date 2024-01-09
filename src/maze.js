@@ -277,13 +277,13 @@ var app = new Vue({
             this.$set(this, "solved", false);
             this.$set(this, "started", false);
             if(filename == "src/maze_easy.json")
-                this.time=60;
+                this.time=15;
             if(filename == "src/maze_medium.json")
-                this.time=90;
+                this.time=25;
             if(filename == "src/maze_hard.json")
-                this.time=120;
+                this.time=35;
             if(filename == "src/maze_ex.json")
-                this.time=180;
+                this.time=45;
             $.getJSON(filename, function (data) {
                 self.height = data.height;
                 self.width = data.weight;
